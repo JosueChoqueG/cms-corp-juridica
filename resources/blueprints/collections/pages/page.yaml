@@ -1,0 +1,199 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+              localizable: true
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  tipo_bloques:
+    display: Tipo_Bloques
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: tipo_bloques
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    slider:
+                      display: Slider
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: template
+                          field:
+                            theme: material
+                            mode: htmlmixed
+                            mode_selectable: true
+                            indent_type: tabs
+                            indent_size: 4
+                            key_map: default
+                            line_numbers: true
+                            line_wrapping: true
+                            antlers: true
+                            type: code
+                            display: Template
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    home_razon:
+                      display: home_razon
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: template
+                          field:
+                            theme: material
+                            mode: htmlmixed
+                            mode_selectable: true
+                            indent_type: tabs
+                            indent_size: 4
+                            key_map: default
+                            line_numbers: true
+                            line_wrapping: true
+                            antlers: true
+                            type: code
+                            display: Template
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    home_area:
+                      display: home_area
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: template
+                          field:
+                            theme: material
+                            mode: htmlmixed
+                            mode_selectable: true
+                            indent_type: tabs
+                            indent_size: 4
+                            key_map: default
+                            line_numbers: true
+                            line_wrapping: true
+                            antlers: true
+                            type: code
+                            display: Template
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    home_funciona:
+                      display: home_funciona
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: template
+                          field:
+                            theme: material
+                            mode: htmlmixed
+                            mode_selectable: true
+                            indent_type: tabs
+                            indent_size: 4
+                            key_map: default
+                            line_numbers: true
+                            line_wrapping: true
+                            antlers: true
+                            type: code
+                            display: Template
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                    home_blog:
+                      display: home_blog
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: template
+                          field:
+                            theme: material
+                            mode: htmlmixed
+                            mode_selectable: true
+                            indent_type: tabs
+                            indent_size: 4
+                            key_map: default
+                            line_numbers: true
+                            line_wrapping: true
+                            antlers: true
+                            type: code
+                            display: Template
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'Tipo Bloques'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
