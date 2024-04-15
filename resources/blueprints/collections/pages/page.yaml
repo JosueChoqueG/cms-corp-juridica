@@ -56,7 +56,6 @@ tabs:
     display: Tipo_Bloques
     sections:
       -
-        display: 'New Section'
         fields:
           -
             handle: tipo_bloques
@@ -65,8 +64,8 @@ tabs:
               previews: true
               fullscreen: true
               sets:
-                new_set_group:
-                  display: 'New Set Group'
+                main:
+                  display: Main
                   instructions: null
                   icon: null
                   sets:
