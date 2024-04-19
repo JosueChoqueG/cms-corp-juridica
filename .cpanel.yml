@@ -1,9 +1,11 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/penalito/public_html/ # Ruta donde se desplegará la aplicación
-    - /bin/rsync -av --exclude='vendor/' --exclude='node_modules/' --exclude='storage/' .env "$DEPLOYPATH" # Sincronizar el archivo .env
-    - /bin/rsync -av --exclude='.env' --exclude='vendor/' --exclude='node_modules/' --exclude='storage/' . "$DEPLOYPATH" # Sincronizar todos los archivos excepto .env, vendor, node_modules y storage
-    - /bin/chown -R penalito:penalito "$DEPLOYPATH" # Cambiar la propiedad de los archivos al usuario de cPanel
-    - /bin/chmod -R 755 "$DEPLOYPATH" # Ajustar los permisos de los archivos
-    - cd "$DEPLOYPATH" && /usr/bin/composer install --no-dev --optimize-autoloader # Instalar dependencias de Composer
+    - export DEPLOYPATH=/home/penalito/public_html
+    - /bin/git pull origin main
+    - /usr/bin/php /usr/local/bin/composer install --working-dir=$DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp $DEPLOYPATH/.env.example $DEPLOYPATH/.env
+    - /usr/bin/php $DEPLOYPATH/artisan key:generate
+    - /bin/find $DEPLOYPATH -type d -exec chmod 755 {} \;
+    - /bin/find $DEPLOYPATH -type f -exec chmod 644 {} \;
