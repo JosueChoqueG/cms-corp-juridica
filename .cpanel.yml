@@ -2,10 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/penalito/public_html
-    - /bin/git pull origin main
-    - /usr/bin/php /usr/local/bin/composer install --working-dir=$DEPLOYPATH
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/cp $DEPLOYPATH/.env.example $DEPLOYPATH/.env
-    - /usr/bin/php $DEPLOYPATH/artisan key:generate
-    - /bin/find $DEPLOYPATH -type d -exec chmod 755 {} \;
-    - /bin/find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - /bin/rsync -a --exclude 'index.php' public/ $DEPLOY
