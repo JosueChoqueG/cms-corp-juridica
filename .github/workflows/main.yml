@@ -11,10 +11,6 @@ jobs:
       - name: Get the latest code
         uses: actions/checkout@v4
       - uses: actions/setup-node@master
-      - name: Installing project dependencies
-        run: npm install
-      - name: Building the project
-        run: npm run production
       - name: Copy .env
         run: cp .env.hosting .env
       - name: Add .env variables
