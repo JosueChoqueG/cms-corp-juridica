@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@master
       - name: Installing project dependencies
         run: npm install
+      - name: Build project
+        run: npm run build
       - name: Copy .env
         run: cp .env.example .env
       - name: Add .env variables
