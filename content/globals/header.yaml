@@ -3,7 +3,6 @@ data:
   template:
     code: |-
       <header class="main-header">
-      		
       		<!-- Header Top -->
       		<div class="header-top">
       			<div class="auto-container">
@@ -35,7 +34,7 @@ data:
       					<div class="d-flex justify-content-between align-items-center flex-wrap">
       						
       						<div class="logo-box d-flex align-items-center flex-wrap">
-      							<div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+      							<div class="logo"><a href="/"><img src="assets/images/logo.png" alt="" title=""></a></div>
       							<!-- Nav Toggle -->
       							<div id="open_offcanvas" class="d-flex align-items-center">
       								<!-- <div class="bars-outer"><img src="assets/images/icons/menu.png" alt="" /></div> -->
@@ -62,14 +61,14 @@ data:
       								
       								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
       									<ul class="navigation clearfix">
-      										<li><a href="index.html">Home</a></li>
-      										<li><a href="about.html">Nosotros</a></li>
-      										<li><a href="case.html">Casos</a></li>
-      										<li><a href="services.html">Servicios</a></li>
-      										<li><a href="services.html">Videos</a></li>
-      										<li><a href="services.html">Libros</a></li>
-      										<li><a href="blog.html">Noticias</a></li>
-      										<li><a href="contact.html">Contact</a></li>
+      										<li><a href="/">Home</a></li>
+      										<li><a href="nosotros">Nosotros</a></li>
+      										<li><a href="casos">Casos</a></li>
+      										<li><a href="servicios">Servicios</a></li>
+      										<li><a href="videos">Videos</a></li>
+      										<li><a href="libros">Libros</a></li>
+      										<li><a href="blog">Noticias</a></li>
+      										<li><a href="contacto">Contact</a></li>
       									</ul>
       								</div>
       							</nav>
