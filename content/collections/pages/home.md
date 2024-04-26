@@ -5,7 +5,7 @@ title: 'Corporación Juridica Penalito'
 template: home
 author: 2727c2fc-7f4a-41ba-95b7-13f20aeed9db
 updated_by: 2727c2fc-7f4a-41ba-95b7-13f20aeed9db
-updated_at: 1713139209
+updated_at: 1714102744
 tipo_bloques:
   -
     id: lv05gxrj
@@ -30,7 +30,7 @@ tipo_bloques:
         									<h1 class="slider-one_heading"><span>Revelando</span> Patentes, Marcas y Derechos de Autor</h1>
         									<div class="slider-one_text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna</div>
         									<div class="slider-one_button">
-        										<a href="https://themeim.com/" class="theme-btn btn-style-one">
+        										<a href="#" class="theme-btn btn-style-one">
         											<span class="btn-wrap">
         												<span class="text-one">Más información <i class="fa-solid fa-angle-right fa-fw"></i></span>
         												<span class="text-two">Más información <i class="fa-solid fa-angle-right fa-fw"></i></span>
@@ -66,7 +66,7 @@ tipo_bloques:
         									<h1 class="slider-one_heading"><span>Revelando</span> Patentes, Marcas y Derechos de Autor</h1>
         									<div class="slider-one_text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna</div>
         									<div class="slider-one_button">
-        										<a href="https://themeim.com/" class="theme-btn btn-style-one">
+        										<a href="#" class="theme-btn btn-style-one">
         											<span class="btn-wrap">
         												<span class="text-one">Más información <i class="fa-solid fa-angle-right fa-fw"></i></span>
         												<span class="text-two">Más información <i class="fa-solid fa-angle-right fa-fw"></i></span>
