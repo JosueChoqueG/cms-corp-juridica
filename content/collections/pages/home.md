@@ -5,7 +5,7 @@ title: 'Corporación Juridica Penalito'
 template: home
 author: 2727c2fc-7f4a-41ba-95b7-13f20aeed9db
 updated_by: 2727c2fc-7f4a-41ba-95b7-13f20aeed9db
-updated_at: 1714102744
+updated_at: 1722050628
 tipo_bloques:
   -
     id: lv05gxrj
